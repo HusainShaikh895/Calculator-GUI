@@ -106,32 +106,32 @@ body
 	color: #DD5F5F;
 }
 
-#plus
+#+
 {
 	background-color: #DD5F5F;
 }
 
-#minus
+#-
 {
 	background-color: #7FBF3F;
 }
 
-#multiply
+#*
 {
 	background-color: #E5E769;
 }
 
-#divide
+#/
 {
 	background-color: #439CC5;
 }
 
-#equal
+#=
 {
 	background-color: green;
 }
 
-#badge
+#microphone
 {
 	font-family: Orbitron;
 	text-align: center;
@@ -148,10 +148,7 @@ body
 
 }
 
-
-
-#badge {
-  
+#microphone {
   animation-name: appear;
   animation-duration: 7s;
 }
