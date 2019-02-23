@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny|Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+body
+{
+	background-color: black;
+}
+
+
+
+#container
+{
+	background-image: url("https://3.imimg.com/data3/ML/LO/MY-3845951/wooden-texture-wallpaper-500x500.jpg");
+	width: 800px;
+	height: 750px;
+	padding: 20px; 
+	margin: 20px auto;
+	border-style: none;
+	border-radius: 20px;
+}
+
+#calculator
+{
+	width: 320px;
+	height: 500px;
+	background-color: #eaedef;
+	padding: 40px ;  
+	font-family: Coiny;
+	margin: 80px auto;
+	border-radius: 10px;
+    box-shadow: -4px -6px 20px 3px #807432;
+}
+
+
+
+#result
+{
+	background-color: #666666;
+	font-family: Orbitron;
+	margin: 10px auto;
+	height: 100px;
+	text-align: right;
+	border-style: groove;
+	
+	
+}
+
+#history
+{
+	color: #111111;
+	font-size: 10px;
+	padding: 5px;
+	font-family: monospace;
+}
+
+
+#output
+{
+	color: black;
+	font-size: 30px;
+	padding: 5px; 
+}
+
+
+
+#keyboard
+{
+	padding: 20px; 
+	
+}
+
+.operator, .number, .extra
+{
+	border-radius: 50%;
+	padding: 5px; 
+	outline: 0;
+	font-size: 30px;
+	font-family: Orbitron;
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+
+.operator:hover, .number:hover, .extra:hover
+{
+	background-color: #999999;
+	font-family: Coiny;
+	font-size: 40px;
+	transition: background-color 1s ease-out;
+
+}
+
+.operator:active, .number:active, .extra:active
+{
+	color: white;
+	transition: color 0.3s ease-out;
+}
+
+.number, .extra
+{
+	background-color: #eaedef;
+	border-width: 0;
+}
+
+#AllClear
+{
+	color: #DD5F5F;
+}
+
+#plus
+{
+	background-color: #DD5F5F;
+}
+
+#minus
+{
+	background-color: #7FBF3F;
+}
+
+#multiply
+{
+	background-color: #E5E769;
+}
+
+#divide
+{
+	background-color: #439CC5;
+}
+
+#equal
+{
+	background-color: green;
+}
+
+#badge
+{
+	font-family: Orbitron;
+	text-align: center;
+	position: relative;
+	top: -10px;
+	left: 10px;
+}
+
+
+@keyframes appear {
+
+  from{color: #ffffff;}
+  to{color: black;}
+
+}
+
+
+
+#badge {
+  
+  animation-name: appear;
+  animation-duration: 7s;
+}
+
+#credit
+{
+	font-family: serif;
+	position: relative;
+	bottom: 20px;
+	left: 450px;
+}
