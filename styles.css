@@ -46,7 +46,7 @@ body
 
 #history
 {
-	color: #111111;
+	color: white;
 	font-size: 10px;
 	padding: 5px;
 	font-family: monospace;
@@ -55,7 +55,7 @@ body
 
 #output
 {
-	color: black;
+	color: white;
 	font-size: 30px;
 	padding: 5px; 
 }
@@ -78,6 +78,7 @@ body
 	width: 70px;
 	height: 70px;
 	float: left;
+	transition : all 0.3 ease-in-out;
 }
 
 .operator:hover, .number:hover, .extra:hover
@@ -85,14 +86,13 @@ body
 	background-color: #999999;
 	font-family: Coiny;
 	font-size: 40px;
-	transition: background-color 1s ease-out;
+	
 
 }
 
 .operator:active, .number:active, .extra:active
 {
 	color: white;
-	transition: color 0.3s ease-out;
 }
 
 .number, .extra
