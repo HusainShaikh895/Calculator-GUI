@@ -3,19 +3,20 @@
 <head>
 	<title>Calculator with GUI</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/icon" href="fav.ico">
 </head>
 <body>
-	<div id="container">
+	
 		
-		<div id="calculator">
+		<div id="calculator" >
 			<div id="microphone">
 				CASIO
 			</div>
-			<div id="result">
+			<div id="result" onclick="prompt1()">
 				<div id="history">
-					0
+					<marquee>Make sure internet is on for a rich interface and voice input. Click AllClear to get Started. Click on the CASIO logo for voice input.</marquee>
 				</div><hr color=black>
-				<div id="output">
+				<div id="output" >
 					<flash>0</flash>
 				</div>
 			</div>
@@ -23,32 +24,31 @@
 				<button class="operator" id="AllClear">AC</button>
 				<button class="operator" id="CE">⌫</button>
 				<button class="operator" id="%">%</button>
-				<button class="operator" id="plus">+</button>
+				<button class="operator plus" id="+">+</button>
 				<button class="number" id="1">1</button>
 				<button class="number" id="2">2</button>
 				<button class="number" id="3">3</button>
-				<button class="operator" id="minus">-</button>
+				<button class="operator minus" id="-">-</button>
 				<button class="number" id="4">4</button>
 				<button class="number" id="5">5</button>
 				<button class="number" id="6">6</button>
-				<button class="operator" id="multiply">X</button>
+				<button class="operator multiply" id="*">X</button>
 				<button class="number" id="7">7</button>
 				<button class="number" id="8">8</button>
 				<button class="number" id="9">9</button>
-				<button class="operator" id="divide">/</button>
-				<button class="extra" id="factorial">X!</button>
+				<button class="operator divide" id="/">/</button>
+				<button class="empty" id="empty"></button>
 				<button class="number" id="0">0</button>
-				<button class="extra" id="dot">.</button>
-				<button class="operator" id="equal">=</button>
+				<button class="empty" id="empty"></button>
+				<button class="operator equal" id="=">=</button>
 
 
 			</div>
 		</div>
-		<div id="credit">
-			Made with ❤️ by <a href="http://www.github.com/HusainShaikh895" color=black>Husain Shaikh<a>
-			<br>Inspired by <a href="https://github.com/abarna-codespot">Abarna</a>
+		<div id="credit" style="text-decoration: none;">
+			Made with ❤️ by <a href="http://www.github.com/HusainShaikh895" color=black>Husain Shaikh<a><br>Inspired by <a href="https://github.com/abarna-codespot">Abarna</a>
 		</div>
-	</div>
-	<script type="text/javascript" src="app.js"></script>
+	
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
