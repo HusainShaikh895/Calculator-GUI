@@ -1,9 +1,25 @@
+function under_construction()
+{
+	alert("Not Implemented yet.");
+}
+
+function prompt1()
+{
+	alert("Click on the CASIO and allow mic permission. Start speaking after allowing.\neg. 2 multiply 10")
+}
+
 function getHistory(){
 	return document.getElementById("history").innerText;
 }
 function printHistory(num){
-	document.getElementById("history").innerText=num;
+	if(num==""){
+		document.getElementById("history").innerText=num;
+	}
+	else{
+		document.getElementById("history").innerText=num;
+	}	
 }
+
 function getOutput(){
 	return document.getElementById("output").innerText;
 }
@@ -50,6 +66,7 @@ for(var i =0;i<operator.length;i++){
 			}
 			if(output!="" || history!=""){
 				output= output==""?output:reverseNumberFormat(output);
+
 				history=history+output;
 				if(this.id=="="){
 					var result=eval(history);
@@ -86,9 +103,13 @@ microphone.onclick=function(){
 				 "minus":"-",
 				 "multiply":"*",
 				 "multiplied":"*",
+				 "multiplied by": "*",
+				 "into":"*",
 				 "divide":"/",
 				 "divided":"/",
-				 "reminder":"%"}
+				 "upon":"/",
+				 "remainder":"%",
+				 "percent":"%" }
 	
 	recognition.onresult = function(event){
 		var input = event.results[0][0].transcript;
