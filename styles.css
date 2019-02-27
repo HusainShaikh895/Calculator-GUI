@@ -1,36 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Coiny|Orbitron');
 @import url('https://fonts.googleapis.com/css?family=Coiny');
+
+*
+{
+	scroll-behavior: smooth;
+}
 body
 {
-	background-color: black;
+	background-image: url("body.png");
+	background-size: 1800px 1200px;
+	
 }
 
 
 
-#container
-{
-	background-image: url("https://3.imimg.com/data3/ML/LO/MY-3845951/wooden-texture-wallpaper-500x500.jpg");
-	width: 800px;
-	height: 750px;
-	padding: 20px; 
-	margin: 20px auto;
-	border-style: none;
-	border-radius: 20px;
-}
+
 
 #calculator
 {
 	width: 320px;
 	height: 500px;
-	background-color: #eaedef;
+	background-color: #eaeaea;
 	padding: 40px ;  
 	font-family: Coiny;
 	margin: 80px auto;
-	border-radius: 10px;
-    box-shadow: -4px -6px 20px 3px #807432;
+	border-radius: 20px;
+	
+	transition: all 0.2s ease-in-out;
+    
+
 }
 
 
+
+a {
+text-decoration: overline;
+color: white;
+font-size: 12px;
+}
 
 #result
 {
@@ -39,6 +46,7 @@ body
 	margin: 10px auto;
 	height: 100px;
 	text-align: right;
+	box-shadow: inset 2px 5px 2px 0 black;
 	border-style: groove;
 	
 	
@@ -68,7 +76,7 @@ body
 	
 }
 
-.operator, .number, .extra
+.number
 {
 	border-radius: 50%;
 	padding: 5px; 
@@ -78,24 +86,69 @@ body
 	width: 70px;
 	height: 70px;
 	float: left;
-	transition : all 0.3 ease-in-out;
+	opacity: 0.8;
+	transition: all 0.3s ease-in-out;
 }
 
-.operator:hover, .number:hover, .extra:hover
+.operator
 {
-	background-color: #999999;
-	font-family: Coiny;
-	font-size: 40px;
-	
+	border-radius: 50%;
+	padding: 5px; 
+	outline: 0;
+	font-size: 25px;
+	font-family: Orbitron;
+	width: 70px;
+	height: 70px;
+	box-shadow: 1px 1px #999;
+	float: left;
 
+	transition: all 0.3s ease-in-out;
+}
+
+
+.empty
+{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	float: left;
+	outline: 0;
+	background-color: #eaedef;
+	padding: 0;
+	border-style: none;
+
+}
+
+.operator:hover
+{
+	background-color: ;
+	font-family: Coiny;
+	font-size: 30px;
+	transition: background-color 1s ease-out;
+	box-shadow: 2px 2px #999;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	opacity: 1;
+
+}
+
+.number:hover
+{
+	background-color: #999;
+	font-size: 50px;
+	transition: background-color, font-size 0.3s ease-out;
+	opacity: 1;
 }
 
 .operator:active, .number:active, .extra:active
 {
 	color: white;
+	box-shadow: 2px 2px 0px black;
+	transform: scale(0.9);
+
 }
 
-.number, .extra
+.number
 {
 	background-color: #eaedef;
 	border-width: 0;
@@ -106,29 +159,29 @@ body
 	color: #DD5F5F;
 }
 
-#+
+.plus
 {
-	background-color: #DD5F5F;
+	background-color: #ea7577;
 }
 
-#-
+.minus
 {
-	background-color: #7FBF3F;
+	background-color: red;
 }
 
-#*
+.multiply
 {
-	background-color: #E5E769;
+	background-color: gold;
 }
 
-#/
+.divide
 {
-	background-color: #439CC5;
+	background-color: orange;
 }
 
-#=
+.equal
 {
-	background-color: green;
+	background-color: lightgreen;
 }
 
 #microphone
@@ -148,15 +201,24 @@ body
 
 }
 
+
+
 #microphone {
+  
   animation-name: appear;
+  cursor: pointer;
   animation-duration: 7s;
 }
+
+
 
 #credit
 {
 	font-family: serif;
 	position: relative;
-	bottom: 20px;
-	left: 450px;
+	text-decoration: overline;
+	font-size: 10px;
+	color: white;
+	bottom: 300px;
+	left: 1100px;
 }
