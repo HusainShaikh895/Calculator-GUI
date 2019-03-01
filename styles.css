@@ -8,6 +8,7 @@
 body
 {
 	background-image: url("body.png");
+	background-repeat: no-repeat;
 	background-size: 1800px 1200px;
 	
 }
